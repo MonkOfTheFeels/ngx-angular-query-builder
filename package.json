@@ -1,6 +1,9 @@
 {
   "name": "ngx-angular-query-builder",
   "version": "19.0.0",
+  "files": [
+    "dist/ngx-angular-query-builder/**"
+  ],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
