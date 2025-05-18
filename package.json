@@ -1,6 +1,7 @@
 {
   "name": "ngx-angular-query-builder",
   "version": "19.0.0",
+  "main": "dist/ngx-angular-query-builder/index.d.ts",
   "files": [
     "dist/ngx-angular-query-builder/**"
   ],
