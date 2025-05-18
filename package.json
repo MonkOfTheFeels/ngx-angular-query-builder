@@ -9,7 +9,8 @@
     "watch-package": "ng build ngx-angular-query-builder --watch --configuration development",
     "watch-demo": "ng build demo --watch --configuration development",
     "test": "ng test",
-    "prettier": "npx prettier --write **"
+    "prettier": "npx prettier --write **",
+    "prepare": "ng build ngx-angular-query-builder"
   },
   "private": true,
   "dependencies": {
