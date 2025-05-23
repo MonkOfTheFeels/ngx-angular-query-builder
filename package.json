@@ -1,52 +1,25 @@
 {
   "name": "ngx-angular-query-builder",
   "version": "19.0.0",
-  "main": "dist/ngx-angular-query-builder/index.d.ts",
-  "files": [
-    "dist/ngx-angular-query-builder/**"
-  ],
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build-demo": "ng build demo",
-    "build-package": "ng build ngx-angular-query-builder",
-    "watch-package": "ng build ngx-angular-query-builder --watch --configuration development",
-    "watch-demo": "ng build demo --watch --configuration development",
-    "test": "ng test",
-    "prettier": "npx prettier --write **",
-    "prepare": "npm run build-package"
-  },
-  "private": true,
-  "dependencies": {
-    "@angular/animations": "^19.0.6",
-    "@angular/cdk": "^19.0.5",
+  "description": "Port of angular2-query-builder from github.com/designermanjeets/Angular-QueryBuilder in order to support angular 12+",
+  "license": "MIT",
+  "peerDependencies": {
     "@angular/common": "^19.0.6",
-    "@angular/compiler": "~19.0.6",
-    "@angular/core": "^19.0.6",
-    "@angular/forms": "^19.0.6",
-    "@angular/material": "^19.0.5",
-    "@angular/platform-browser": "^19.0.6",
-    "@angular/platform-browser-dynamic": "^19.0.6",
-    "@angular/router": "^19.0.6",
-    "rxjs": "7.8.1",
-    "tslib": "2.6.2",
-    "zone.js": "~0.15.0"
+    "@angular/core": "^19.0.6"
   },
-  "devDependencies": {
-    "@angular-devkit/build-angular": "^19.0.7",
-    "@angular/cli": "^19.0.7",
-    "@angular/compiler-cli": "^19.0.6",
-    "@types/jasmine": "5.1.4",
-    "@types/node": "20.10.5",
-    "jasmine-core": "5.1.1",
-    "karma": "6.4.2",
-    "karma-chrome-launcher": "3.2.0",
-    "karma-coverage": "^2.2.1",
-    "karma-coverage-istanbul-reporter": "3.0.3",
-    "karma-jasmine": "5.1.0",
-    "karma-jasmine-html-reporter": "2.1.0",
-    "karma-spec-reporter": "^0.0.36",
-    "ng-packagr": "19.0.1",
-    "typescript": "5.6.3"
-  }
+  "dependencies": {
+    "tslib": "^2.6.2"
+  },
+  "module": "fesm2022/ngx-angular-query-builder.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./fesm2022/ngx-angular-query-builder.mjs"
+    }
+  },
+  "sideEffects": false
 }
